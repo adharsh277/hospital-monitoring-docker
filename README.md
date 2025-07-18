@@ -94,19 +94,22 @@ Runs tests and notifies on success/failure
 Workflow file: .github/workflows/ci-cd.yml
 
 📸 Screenshots
-## 📸 Screenshots
-
-### 🔧 Prometheus Target Configuration
-This view shows Prometheus successfully scraping metrics from the Flask app.
-
-![Prometheus Targets](./assets/prometheus_targets.png)
+📸 Screenshots
 
 ---
 
-### 📈 Grafana Dashboard for Monitoring
+🔧 **Prometheus Target Configuration**  
+This view shows Prometheus successfully scraping metrics from the Flask app.
+
+![Prometheus Targets](assets/prometheus_targets.png)
+
+---
+
+📈 **Grafana Dashboard for Monitoring**  
 This is the live Grafana dashboard showing system metrics such as CPU and Memory usage visualized in real-time.
 
-![Grafana Dashboard](./assets/grafana_dashboard.png)
+![Grafana Dashboard](assets/grafana_dashboard.png)
+
 
 ## 🙏 Acknowledgments
 Thanks to open-source tools like:
