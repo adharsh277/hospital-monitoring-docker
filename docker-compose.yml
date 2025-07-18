@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  hospital_app:
+    build: .
+    ports:
+      - "5000:5000"
+    container_name: hospital_app
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    container_name: prometheus
+    depends_on:
+      - hospital_app
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    container_name: grafana

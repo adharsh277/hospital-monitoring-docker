@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'hospital-monitoring-app'
+    static_configs:
+      - targets: ['youthful_rubin:5000']
